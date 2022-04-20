@@ -7,7 +7,7 @@ var LibCrazyGamesSdk = {
         crazysdk.init(); //Initializing the SDK, call as early as possible
     },
 
-    CrazyGamesSdkJs_init_listeners: function () {
+    CrazyGamesSdkJs_initListeners: function () {
         window.crazysdk_jstodef_listeners = {
             adStarted: function () {
                 JsToDef.send("CrazyGame_adStared");
