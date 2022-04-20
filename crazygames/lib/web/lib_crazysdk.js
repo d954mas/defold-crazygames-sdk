@@ -51,7 +51,7 @@ var LibCrazyGamesSdk = {
     },
     CrazyGamesSdkJs_happyTime: function () {
         const crazysdk = window.CrazyGames.CrazySDK.getInstance();
-        crazysdk.happyTime()
+        crazysdk.happytime()
     }
 
 
