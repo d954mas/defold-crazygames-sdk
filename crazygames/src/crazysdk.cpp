@@ -74,9 +74,9 @@ static const luaL_reg Module_methods[] =
     {"request_ad", CrazyGamesSdkJs_requestAdLua},
     {"add_event_listeners", CrazyGamesSdkJs_addEventListenersLua},
     {"clear_event_listeners", CrazyGamesSdkJs_clearEventListenersLua},
-    {"gameplayStop", CrazyGamesSdkJs_gameplayStopLua},
-    {"gameplayStart", CrazyGamesSdkJs_gameplayStartLua},
-    {"happyTime", CrazyGamesSdkJs_happyTimeLua},
+    {"gameplay_stop", CrazyGamesSdkJs_gameplayStopLua},
+    {"gameplay_start", CrazyGamesSdkJs_gameplayStartLua},
+    {"happy_time", CrazyGamesSdkJs_happyTimeLua},
     {0, 0}
 };
 
