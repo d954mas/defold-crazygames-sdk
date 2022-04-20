@@ -23,7 +23,7 @@ var LibCrazyGamesSdk = {
 
     CrazyGamesSdkJs_requestAd: function (type) {
         const crazysdk = window.CrazyGames.CrazySDK.getInstance();
-        var type_string = UTF8ToString(key);
+        var type_string = UTF8ToString(type);
         crazysdk.requestAd(type_string);
     },
 
