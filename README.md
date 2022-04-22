@@ -2,7 +2,9 @@
 https://developer.crazygames.com/sdk#HTML5
 
 I make this sdk for my game, so not all functions are ready.
+
 This extension use jstodef to send messages from JavaScript to Lua
+
 **Implemented:**
 - ad midgame
 - ad rewarded
