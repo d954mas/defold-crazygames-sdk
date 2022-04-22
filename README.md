@@ -33,11 +33,14 @@ Or point to the ZIP file of a [specific release](https://github.com/AGulev/jstod
 ```lua
 --1.Init sdk.
 crazy_games.init()  
---init listeners
---'adStarted', 'adFinished','adError', 
+
+--init listeners 'adStarted', 'adFinished','adError' 
+--call it once to create listeners in js side
 crazy_games.init_listeners()  
---add listeners
+
+--add js listeners 'adStarted', 'adFinished','adError', 
 crazy_games.add_event_listeners()
+
 --You can remove listeners if you don't need then anymore
 crazy_games.clear_event_listeners()
 
