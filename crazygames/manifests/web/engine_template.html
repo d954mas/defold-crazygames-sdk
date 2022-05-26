@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <head>
 	<script src="https://sdk.crazygames.com/crazygames-sdk-v1.js"></script>
+	<script>
+		const crazysdk = window.CrazyGames.CrazySDK.getInstance(); //Getting the SDK
+		crazysdk.init(); //Initializing the SDK, call as early as possible
+	</script>
 </head>
 
 <body>

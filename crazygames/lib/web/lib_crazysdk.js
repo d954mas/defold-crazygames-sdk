@@ -4,7 +4,7 @@ var LibCrazyGamesSdk = {
 
     CrazyGamesSdkJs_init: function () {
         const crazysdk = window.CrazyGames.CrazySDK.getInstance(); //Getting the SDK
-        crazysdk.init(); //Initializing the SDK, call as early as possible
+        crazysdk.sdkGameLoadingStop(); //Initializing the SDK, call as early as possible
     },
 
     CrazyGamesSdkJs_initListeners: function () {
