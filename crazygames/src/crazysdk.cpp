@@ -8,45 +8,23 @@
 
 
 extern "C" {
-    void CrazyGamesSdkJs_init();
+    void CrazyGamesSdkJs_gameLoadingStop();
     void CrazyGamesSdkJs_requestAd(const char* type);
-    void CrazyGamesSdkJs_initListeners();
-    void CrazyGamesSdkJs_addEventListeners();
-    void CrazyGamesSdkJs_clearEventListeners();
     void CrazyGamesSdkJs_gameplayStart();
     void CrazyGamesSdkJs_gameplayStop();
     void CrazyGamesSdkJs_happyTime();
 }
 
-static int CrazyGamesSdkJs_initLua(lua_State* L){
+static int CrazyGamesSdkJs_gameLoadingStopLua(lua_State* L){
     DM_LUA_STACK_CHECK(L, 0);
-    CrazyGamesSdkJs_init();
+    CrazyGamesSdkJs_gameLoadingStop();
     return 0;
 }
-
-
 
 static int CrazyGamesSdkJs_requestAdLua(lua_State* L){
     DM_LUA_STACK_CHECK(L, 0);
     const char* type = luaL_checkstring(L, 1);
     CrazyGamesSdkJs_requestAd(type);
-    return 0;
-}
-
-static int CrazyGamesSdkJs_initListenersLua(lua_State* L){
-    DM_LUA_STACK_CHECK(L, 0);
-    CrazyGamesSdkJs_initListeners();
-    return 0;
-}
-
-static int CrazyGamesSdkJs_addEventListenersLua(lua_State* L){
-    DM_LUA_STACK_CHECK(L, 0);
-    CrazyGamesSdkJs_addEventListeners();
-    return 0;
-}
-static int CrazyGamesSdkJs_clearEventListenersLua(lua_State* L){
-    DM_LUA_STACK_CHECK(L, 0);
-    CrazyGamesSdkJs_clearEventListeners();
     return 0;
 }
 
@@ -71,11 +49,8 @@ static int CrazyGamesSdkJs_happyTimeLua(lua_State* L){
 // Functions exposed to Lua
 static const luaL_reg Module_methods[] =
 {
-    {"init", CrazyGamesSdkJs_initLua},
+    {"game_loading_stop", CrazyGamesSdkJs_gameLoadingStopLua},
     {"request_ad", CrazyGamesSdkJs_requestAdLua},
-    {"init_listeners", CrazyGamesSdkJs_initListenersLua},
-    {"add_event_listeners", CrazyGamesSdkJs_addEventListenersLua},
-    {"clear_event_listeners", CrazyGamesSdkJs_clearEventListenersLua},
     {"gameplay_stop", CrazyGamesSdkJs_gameplayStopLua},
     {"gameplay_start", CrazyGamesSdkJs_gameplayStartLua},
     {"happy_time", CrazyGamesSdkJs_happyTimeLua},
