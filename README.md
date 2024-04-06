@@ -43,14 +43,15 @@ Or point to the ZIP file of a [specific release](https://github.com/AGulev/jstod
 ## Example
 
 
+```lua
 --1.Register jstodef listener
 jstodef.add_listener(function(_, message_id, message)  
 	if (message_id == "CrazyGame_adStared") then  
-		 
+        --logic
 	elseif (message_id == "CrazyGame_adFinished") then  
-	 
+	 --logic
 	elseif (message_id == "CrazyGame_adError") then  
-	  
+	  --logic
 	end
 end)
 
