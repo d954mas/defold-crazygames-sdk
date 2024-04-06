@@ -34,7 +34,7 @@ This extension use jstodef to send messages from JavaScript to Lua
 ## Installation
 
 __1)__ Add defold-crazygames-sdk in your own project as a Defold library dependency. Open your game.project file and in the dependencies field under project add:
-https://github.com/d954mas/defold-crazygames-sdk/archive/refs/tags/v0.1.0.zip
+https://github.com/d954mas/defold-crazygames-sdk/archive/refs/tags/v0.2.0.zip
 
 __2)__ Add [jstodef](https://github.com/AGulev/jstodef) in your own project as a Defold library dependency. Open your game.project file and in the dependencies field under project add:[https://github.com/AGulev/jstodef/archive/master.zip](https://github.com/AGulev/jstodef/archive/master.zip)
 Or point to the ZIP file of a [specific release](https://github.com/AGulev/jstodef/releases).
