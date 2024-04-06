@@ -1,6 +1,18 @@
 ## Sdk for crazygames.com
 https://developer.crazygames.com/sdk#HTML5
 
+NOT SUPPORTED. Use on your own risk.
+
+I made this sdk for api v1. Now crazy use api v2.
+
+Pull request with v2 support was merged. 
+In theory this should worked.
+
+I don't test v2 api. The documentation and example not correct.
+
+Look at code.
+
+
 I make this sdk for my game, so not all functions are ready.
 
 This extension use jstodef to send messages from JavaScript to Lua
@@ -17,12 +29,7 @@ This extension use jstodef to send messages from JavaScript to Lua
 - Invite link
 - User information
 
-If you like the extension you can support me on patreon.
-It will help me make more items for defold.
 
-[![](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/d954mas)
-
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/d954mas)
 
 ## Installation
 
@@ -34,21 +41,9 @@ Or point to the ZIP file of a [specific release](https://github.com/AGulev/jstod
 
 
 ## Example
-```lua
---1.Init sdk.
-crazy_games.init()  
 
---init listeners 'adStarted', 'adFinished','adError' 
---call it once to create listeners in js side
-crazy_games.init_listeners()  
 
---add js listeners 'adStarted', 'adFinished','adError', 
-crazy_games.add_event_listeners()
-
---You can remove listeners if you don't need then anymore
-crazy_games.clear_event_listeners()
-
---2.Register jstodef listener
+--1.Register jstodef listener
 jstodef.add_listener(function(_, message_id, message)  
 	if (message_id == "CrazyGame_adStared") then  
 		 
@@ -59,15 +54,15 @@ jstodef.add_listener(function(_, message_id, message)
 	end
 end)
 
---3.Ask for ad
+--2.Ask for ad
 crazy_games.request_ad("midgame")
 crazy_games.request_ad("rewarded")
 
---4.Gameplay
+--3.Gameplay
 crazy_games.gameplay_start()
 crazy_games.gameplay_stop()
 
---5.Happy time
+--4.Happy time
 crazy_games.happy_time()
 ```
 
