@@ -8,7 +8,7 @@ I made this sdk for api v1. Now crazy use api v2.
 Pull request with v2 support was merged. 
 In theory this should worked.
 
-I don't test v2 api. The documentation and example not correct.
+I don't test v2 api. The documentation and example may be not correct.
 
 Look at code.
 
